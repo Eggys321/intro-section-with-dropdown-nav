@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 :root{
@@ -28,7 +29,6 @@ nav ul{
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px 12px;
-    /* border: 1px solid red; */
 }
 
 /* main */
@@ -50,7 +50,6 @@ h1{
 }
 
 p{
-    /* font-size: 18px; */
     color: var(--medium-gray);
     text-align: center;
     line-height: 1.5;
@@ -71,18 +70,93 @@ p{
     border-radius: 12px;
     border: none;
     font-size: 18px;
-    /* padding: 15px; */
+    font-weight: 700;
 }
 
 .section-2-imgs{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* max-width: 25%; */
     margin: 30px 1px;
 }
 
 .section-2-imgs img{
     max-width: 100%;
 }
+@media(min-width:1024px){
+    nav ul{
+        display: flex;
+        align-items: center;
+        color: var(--medium-gray);
+        font-weight: 500;
+        font-size: 18px;
+        gap: 30px;
+    }
+    .nav-div-1{
+        display: flex;
+        align-items: center;
+        gap: 50px;
 
+    }
+   
+    nav button{
+        border: 2px solid var(--medium-gray);
+        color: var(--medium-gray);
+        padding: 15px 25px ;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .menu-icon{
+        display: none;
+    }
+    /* main */
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10rem;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 60px 0;
+        max-height: 100%;
+    }
+    h1,p{
+        text-align: start;
+    }
+    h1{
+        font-size: 5.1rem;
+        padding: 45px 0;
+    }
+    p{
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    #desktop-hero{
+        display: block;
+        max-height: 100%;
+    }
+    #mobile-hero{
+        display: none;
+    }
+    .section-1{
+        display: flex;
+        justify-content: center;
+    }
+    .section-2-btn-wrapper{
+        justify-content: flex-start;
+        padding: 50px 0;
+    }
+    .section-2-btn-wrapper button{
+        width: 30%;
+    }
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .section-2-imgs{
+        margin: 0;
+    }
+    
+}
