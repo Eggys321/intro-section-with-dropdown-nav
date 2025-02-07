@@ -53,6 +53,7 @@ p{
     color: var(--medium-gray);
     text-align: center;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .section-2-btn-wrapper{
